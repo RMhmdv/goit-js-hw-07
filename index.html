@@ -7,29 +7,117 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="01.html">Задание 01</a>
+ <header>
+    <ul class="menu-task">
+        <li class="menu-item">
+            <a href="#">Задание 01</a>
         </li>
-        <li>
-            <a href="02.html">Задание 02</a>
-        <li>
-            <a href="03.html">Задание 03</a>
+        <li class="menu-item">
+            <a href="#">Задание 02</a>
+        <li class="menu-item">
+            <a href="#">Задание 03</a>
         </li>        
-        <li>
-            <a href="04.html">Задание 04</a>
-        <li>
-            <a href="05.html">Задание 05</a>
+        <li class="menu-item">
+            <a href="#">Задание 04</a>
+        <li class="menu-item">
+            <a href="#">Задание 05</a>
         </li>        
-        <li>
-            <a href="06.html">Задание 06</a>
-        <li>
-            <a href="07.html">Задание 07</a>
-        <li>
-            <a href="08.html">Задание 08</a>
+        <li class="menu-item">
+            <a href="#">Задание 06</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">Задание 07</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">Задание 08</a>
         </li>    
     </ul>
- 
+ </header>
+ <main>
+    <section class="task">
+        <h2>Task 1</h2>
+        <ul id="categories">
+            <li class="item">
+              <h2>Животные</h2>
+          
+              <ul>
+                <li>Кот</li>
+                <li>Хомяк</li>
+                <li>Лошадь</li>
+                <li>Попугай</li>
+              </ul>
+            </li>
+            <li class="item">
+              <h2>Продукты</h2>
+          
+              <ul>
+                <li>Хлеб</li>
+                <li>Петрушка</li>
+                <li>Творог</li>
+              </ul>
+            </li>
+            <li class="item">
+              <h2>Технологии</h2>
+          
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+              </ul>
+            </li>
+          </ul>
+    </section>
+    <section class="task">
+      <h2>Task 2</h2>
+        <ul id="ingredients"></ul>
+      </h2>
+    </section>
+    <section class="task">
+      <h2>Task 3</h2> 
+      <ul id="gallery"></ul>
+    </section>
+    <section class="task">
+      <h2>Task 4</h2>   
+      <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button>
+      </div>
+    </section>
+    <section class="task">
+      <h2>Task 5</h2>      
+      <input type="text" placeholder="Ваше имя?" id="name-input" />
+      <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    </section>
+    <section class="task">
+      <h2>Task 6</h2>    
+      <input
+      type="text"
+      id="validation-input"
+      data-length="6"
+      placeholder="Введи 6 символов"
+    />
+    </section>
+    <section class="task">
+      <h2>Task 7</h2>   
+      <input id="font-size-control" type="range" />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </section>
+    <section class="task">
+      <h2>Task 8</h2> 
+      <div id="controls">
+        <input type="number" min="0" max="100" step="1" />
+        <button type="button" data-action="render">Создать</button>
+        <button type="button" data-action="destroy">Очистить</button>
+      </div>
+      
+      <div id="boxes"></div>
+           
+    </section>
+ </main>
 </body>
 </html>
 
