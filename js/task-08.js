@@ -1,0 +1,3 @@
+
+createBoxes(amount)
+destroyBoxes()
