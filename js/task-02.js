@@ -12,12 +12,12 @@ const ingredients = [
 const ulEl = document.querySelector('#ingredients');
 
 
-const foodMenu = ingredients.map(ingredient => {
+const foodEl = ingredients.map(ingredient => {
   const ulItemEl = document.createElement('li');
   ulItemEl.textContent = ingredient;
   return ulItemEl;
 });
 
-ulEl.append(...foodMenu);
+ulEl.append(...foodEl);
 
 console.log(ulEl);
