@@ -10,11 +10,14 @@ const ingredients = [
 
 
 const ulEl = document.querySelector('#ingredients');
-const ulItemEl = document.createElement('li');
 
-const foodMenu = ingredients.forEach(ingredient => {
+
+const foodMenu = ingredients.map(ingredient => {
+  const ulItemEl = document.createElement('li');
   ulItemEl.textContent = ingredient;
-  ulEl.appendChild(ulItemEl);
+  return ulItemEl;
 });
 
-console.log(foodMenu);
+ulEl.append(...foodMenu);
+
+console.log(ulEl);

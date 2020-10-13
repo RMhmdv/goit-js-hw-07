@@ -1,3 +1,3 @@
-
-createBoxes(amount)
-destroyBoxes()
+'use strict';
+// createBoxes(amount)
+// destroyBoxes()

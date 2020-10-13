@@ -17,11 +17,12 @@ const images = [
     },
   ];
 
-  const galleryEl = document.querySelector('.gallery');
-  const galleryItemEl = document.createElement('li');
-  const galNew = images.forEach(image => {
-    galleryItemEl.innerHTML = image;
-    galleryEl.insertAdjacentHTML("afterbegin",galleryItemEl);
-    });
-  
-  console.log(galNew);
+
+  const createGalleryItem = ({ url, alt }) =>
+  `<li><img src="${url}" alt="${alt}" width = 350 height = 250></li>`;
+const galleryNewEl = images.reduce(
+  (acc, item) => acc + createGalleryItem(item), "" );
+
+const galleryList = document.querySelector("#gallery");
+galleryList.insertAdjacentHTML("afterbegin", galleryNewEl);
+galleryList.setAttribute("style", "list-style-type:none; display: flex;");

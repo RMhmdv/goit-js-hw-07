@@ -1,5 +1,5 @@
 'use strict';
 const counterEl = document.querySelector('#counter');
-const counterValue = ;
+// const counterValue = ;
 
-console.log();
+// console.log();
