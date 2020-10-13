@@ -8,15 +8,15 @@
 // <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
 
 const input = document.querySelector('#name-input');
-console.log(input);
 const nameLabel = document.querySelector('#name-output'); 
 
 input.addEventListener('input', onInputChange);
 
-const fn = function onInputChange(event) {
-    nameLabel.textContent = event.currentTarget.value;
-};
-   return nameLabel.textContent = "незнакомец";
-};
+function onInputChange(event) {
+    if (event.currentTarget.value !== ``) {
+        nameLabel.textContent = event.currentTarget.value;
+    } else {
+        nameLabel.textContent = "незнакомец";
+    }
+}
 
-console.log(nameLabel);
