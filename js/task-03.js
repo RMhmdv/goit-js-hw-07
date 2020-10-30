@@ -18,9 +18,9 @@ const images = [
   ];
 
 
-  const createGalleryItem = ({ url, alt }) =>
+const createGalleryItem = ({ url, alt }) =>
   `<li><img src="${url}" alt="${alt}" width = 350 height = 250></li>`;
-const galleryNewEl = images.reduce(
+const galleryNewEl = images.reduce( 
   (acc, item) => acc + createGalleryItem(item), "" );
 
 const galleryList = document.querySelector("#gallery");
